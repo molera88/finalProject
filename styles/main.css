@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kelly Slab', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: black;
+}
+header {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+.navMainDiv {
+    display: flex;
+    gap: 24px;
+    height: fit-content;
+    align-items: center;
+    position: absolute;
+    bottom: -41px;
+}
+.beerMainDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 12px 24px 12px;
+    background-color: black;
+}
+.yellowLongline {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(221 192 0);
+}
+.beerMainDiv a {
+    color: rgb(221,192,0);
+}
+.belgText {
+    font-size: 33px;
+}
+.beerLinetext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shortLine {
+    width: 46px;
+    height: 5px;
+    background-color: rgb(221 192 0);
+}
+.shortrLineText {
+    font-size: 20px;
+}
+.beerTimeText {
+    font-size: 15px;
+}
+.varimDiv {
+    display: flex;
+    justify-content: space-between;
+}
+.navMenuText {
+    color: white;
+}
+.navMenu :hover {
+    color: #DDC000;
+}
+.navMenu {
+    display: flex;
+    gap: 24px;
+}
+
+.mainfullDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.back-img-div {
+    width: 100%;
+    height: 448px;
+    background-image: url("../images/two\ boxers.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardsMainDiv {
+    display: flex;
+    padding: 20px;
+    width: fit-content;
+    border-top: 1px solid #4F4D4D;
+    gap: 15px;
+    
+}
+.burgerMenuDiv {
+    display: none;
+}
+.cardDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+}
+.cardImg {
+    width: 244px;
+    height: 100px;
+}
+.cardLine {
+    width: 244px;
+}
+.cardDesc {
+    font-size: 13px;
+    width: 189px;
+}
+.cardAnchor {
+    color: #DDC000;
+}
+.mainFooterDiv {
+    border-top: 1px solid #4F4D4D;
+    height: 60px;
+    padding-top: 15px;
+    padding-left: 330px;
+    color: white;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .navMenu {
+        display: none;
+    }
+    .burgerMenuDiv {
+        display: block;
+    }
+    header {
+        position: static;
+        align-items: flex-start;
+        height: 126px;
+    }
+    .navMainDiv {
+        position: static;
+        align-items: flex-start;
+        gap: 21px;
+    }
+    .burgerMenu {
+        width: 70px;
+        padding-top: 10px;
+    }
+    .yellowLongline {
+        display: none;
+    }
+    .shortLine {
+        display: none;
+    }
+    .beerMainDiv {
+        padding: 10px 0 10px 10px
+    }
+    .beerLinetext {
+        justify-content: center;
+    }
+    .back-img-div {
+        background-image: url("../images/two\ boxers\ for\ mobile.png");
+        height: 173px;
+    }
+    .cardsMainDiv {
+        flex-direction: column;
+    }
+    .mainFooterDiv {
+        padding-left: 35px;
+    }
+    .copyText {
+        width: 262px;
+    }
+}
